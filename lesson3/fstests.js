@@ -5,4 +5,3 @@ var obj = {
     "tumo_student": true
 };
 var myJSON = JSON.stringify(obj);
-document.getElementById().innerHTML = myJSON;

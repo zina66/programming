@@ -1,12 +1,13 @@
-// var Square = require("./module");
-// var mySquareObject = new Square(5);
+var fs = require('fs');
+var dummyText = "Apple yep";
 
-// function main() {
-//    console.log(mySquareObject.getArea());
-// }
-// main();
 function main() {
-    var file = "hello.txt";
-    fs.appendFileSync(file, "Hello world\n");
+   fs.writeFileSync("dummytext.txt", dummyText);
+   var text = fs.readFileSync("dummytext.txt").toString();
+   console.log(dummyText == text);
+   console.log(text);
+   fs.writeFileSync("undummytext.txt",
+       text.replace("Apple", "Microsoft")
+   );
 }
 main();
