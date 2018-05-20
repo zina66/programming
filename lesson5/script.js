@@ -39,16 +39,12 @@ function main() {
 
         for (var i in paragraphs) {
             paragraphs[0].remove();
-            if(paragraphs.length == 0){
+            if (paragraphs.length == 0) {
                 break;
             }
 
         }
     }
-
-
-
-
 
 } // main closing bracket
 
